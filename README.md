@@ -59,11 +59,7 @@ Stub::source('model')->params([
 ])->save('UserModel.php');
 
 // force save
-Stub::source('model')->params([
-  '{{modelName}}' => 'UserModel',
-  '{{namespace}}' => 'App\Models',
-  '{{fillable}}' => "'name', 'email', 'age'",
-])->save('UserModel.php', true);
+->save('UserModel.php', true);
 
 ```
 Download:
