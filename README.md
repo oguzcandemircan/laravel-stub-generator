@@ -105,17 +105,17 @@ If you discover any security related issues, please email author email instead o
 
 ## Credits
 
-- [Oğuzcan Demircan](https://github.com/oguzcandemircan)
+- [Oğuzcan Demircan][link-author]
 - [All Contributors][link-contributors]
 
 ## License
 
 license. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/oguzcandemircan/laravelstubgenerator.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/oguzcandemircan/laravelstubgenerator.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/oguzcandemircan/laravel-stub-generator.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/oguzcandemircan/laravel-stub-generator.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/oguzcandemircan/laravelstubgenerator
-[link-downloads]: https://packagist.org/packages/oguzcandemircan/laravelstubgenerator
+[link-packagist]: https://packagist.org/packages/oguzcandemircan/laravel-stub-generator
+[link-downloads]: https://packagist.org/packages/oguzcandemircan/laravel-stub-generator
 [link-author]: https://github.com/oguzcandemircan
 [link-contributors]: ../../contributors
