@@ -38,18 +38,6 @@ class {{modelName}} extends Model
 ```
 
 Generate:
-
-```php
-use OguzcanDemircan\LaravelStubGenerator\Facades\Stub;
-
-Stub::source('model')->params([
-  '{{modelName}}' => 'UserModel',
-  '{{namespace}}' => 'App\Models',
-])->generate();
-```
-
-Save:
-
 ```php
 use OguzcanDemircan\LaravelStubGenerator\Facades\Stub;
 
@@ -57,30 +45,30 @@ Stub::source('model')->params([
   '{{modelName}}' => 'UserModel',
   '{{namespace}}' => 'App\Models',
   '{{fillable}}' => "'name', 'email', 'age'",
-])->generate()->save('UserModel.php');
+])->generate();
+```
 
-//or
+Save:
+```php
+use OguzcanDemircan\LaravelStubGenerator\Facades\Stub;
 
 Stub::source('model')->params([
   '{{modelName}}' => 'UserModel',
   '{{namespace}}' => 'App\Models',
   '{{fillable}}' => "'name', 'email', 'age'",
 ])->save('UserModel.php');
-```
 
-
-Download:
-
-```php
-use OguzcanDemircan\LaravelStubGenerator\Facades\Stub;
-
+// force save
 Stub::source('model')->params([
   '{{modelName}}' => 'UserModel',
   '{{namespace}}' => 'App\Models',
   '{{fillable}}' => "'name', 'email', 'age'",
-])->generate()->download('UserModel.php');
+])->save('UserModel.php', true);
 
-//or
+```
+Download:
+```php
+use OguzcanDemircan\LaravelStubGenerator\Facades\Stub;
 
 Stub::source('model')->params([
   '{{modelName}}' => 'UserModel',
