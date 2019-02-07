@@ -60,15 +60,6 @@ LaravelStubGenerator::source('model')->params([
 ->save('UserModel.php', true);
 
 ```
-Download:
-```php
-
-LaravelStubGenerator::source('model')->params([
-  '{{modelName}}' => 'UserModel',
-  '{{namespace}}' => 'App\Models',
-  '{{fillable}}' => "'name', 'email', 'age'",
-])->download('UserModel.php');
-```
 
 Output:
 ```php
@@ -82,6 +73,16 @@ class UserModel extends Model
 {
     protected $fillable = ['name', 'email', 'age'];
 }
+```
+
+Download:
+```php
+
+LaravelStubGenerator::source('model')->params([
+  '{{modelName}}' => 'UserModel',
+  '{{namespace}}' => 'App\Models',
+  '{{fillable}}' => "'name', 'email', 'age'",
+])->download('UserModel.php');
 ```
 
 ## Change log
