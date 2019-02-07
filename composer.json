@@ -1,0 +1,43 @@
+{
+    "name": "oguzcandemircan/laravel-stub-generator",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oğuzcan Demircan",
+            "email": "demircanoguzcan@gmail.com",
+            "homepage": "https://github.com/oguzcandemircan"
+        }
+    ],
+    "homepage": "https://github.com/oguzcandemircan/laravelstubgenerator",
+    "keywords": ["Laravel", "laravel stub generator", "stub", "generator", "php"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OguzcanDemircan\\LaravelStubGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OguzcanDemircan\\LaravelStubGenerator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OguzcanDemircan\\LaravelStubGenerator\\LaravelStubGeneratorServiceProvider"
+            ],
+            "aliases": {
+                "LaravelStubGenerator": "OguzcanDemircan\\LaravelStubGenerator\\Facades\\LaravelStubGenerator"
+            }
+        }
+    }
+}
